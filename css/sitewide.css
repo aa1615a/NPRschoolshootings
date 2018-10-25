@@ -1,0 +1,281 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+h1 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 'black';
+	color: #ffe605;
+	line-height: 60px;
+}
+
+#maintitle {
+	font-size: 55px;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+h2 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	line-height: 40px;
+	color: #ffe605;
+}
+
+#subtitle {
+	color: #f2f2f2;
+}
+
+h3 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-family: 'Lora', Garamond, serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #f2f2f2;
+  background-color: #363738;
+}
+
+a {
+	color: #ffe605;
+}
+
+b {
+	color: #ffe605;
+}
+
+i {
+	align-content: center;
+}
+
+p {
+	max-width: 800px;
+	padding-left: 100px;
+}
+
+small.notes{
+  padding-top: 20px;
+}
+
+/* CONTAINTERS */
+.container {
+	padding: 1em;
+}
+
+.data {
+	padding: 3em;
+	background-color: #616161;
+	margin-left: 50px;
+	max-width: 900px;
+	/* red color #c1272d */
+}
+
+/* lazy loading elements */
+.hideme
+{
+    opacity:0;
+}
+
+.hideme2
+{
+    opacity:0;
+}
+
+/* ------------------------------------------------------------ */
+/* SLIDESHOW */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 675px;
+  position: relative;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides:first-child {
+  display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffe605;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #363738;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  background: rgba(54,55,56,0.6)
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffe605;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* ------------------------------------------------------------ */
+/* TABLE */
+table {
+    max-width: 675px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 14px;
+    text-align: left;
+}
+
+th{
+	background-color: #ffe605;
+	color: black;
+}
+
+.noevrytwn{
+	background-color: #303030;
+}
+
+.bullet{
+  color: #ffe605;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/* ------------------------------------------------------------ */
+/* NAV BAR */
+nav {
+    padding: 15px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    background-color: black; 
+}
+
+nav a:hover {
+  background-color: #ffe605;
+  color: black;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+.nav-right ul li {
+    float: right;
+}
+
+#totalcount {
+  display: grid;
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-columns: 1fr 1fr
+}
+
+#item1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+	
+	/* container on larger screens */
+	.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 2em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 2em;
+	}
+
+} /* end media query */
