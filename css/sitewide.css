@@ -95,6 +95,14 @@ small.notes{
     opacity:0;
 }
 
+#shrink1 {
+  width: 50%;
+}
+
+#shrink2 {
+  width: 20%;
+}
+
 /* ------------------------------------------------------------ */
 /* SLIDESHOW */
 * {box-sizing:border-box}
@@ -255,10 +263,13 @@ nav a:hover {
     float: right;
 }
 
+/* ------------------------------------------------------------ */
+/* GRID */
+
 #totalcount {
   display: grid;
-  grid-template-rows: 150px 150px 150px 150px;
-  grid-template-columns: 1fr 1fr
+  grid-template-rows: 150px auto auto auto;
+  grid-template-columns: 1fr 1fr;
 }
 
 #item1 {
