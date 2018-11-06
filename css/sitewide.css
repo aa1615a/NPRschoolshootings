@@ -67,6 +67,10 @@ p {
 	padding-left: 100px;
 }
 
+small.designnote{
+  color: #b3b3b3;
+}
+
 small.notes{
   padding-top: 20px;
 }
@@ -228,8 +232,12 @@ th{
 /* ------------------------------------------------------------ */
 /* NAV BAR */
 nav {
+  align-content: center;
     padding: 15px;
+    max-width: 900px;
+    padding-left: 100px;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -268,12 +276,18 @@ nav a:hover {
 
 #totalcount {
   display: grid;
-  grid-template-rows: 150px auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
 }
 
 #item1 {
   grid-area: 1 / 1 / 2 / 2;
+}
+
+h3{
+  margin-top: 0px;
 }
 /* ------------------------------------------------------------ */
 /* media query containing styles for larger screens */
